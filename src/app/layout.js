@@ -21,8 +21,20 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+      > <nav>
+        <ul>
+          <li>
+            <a >Home</a>
+          </li>
+          <li>
+            <a href="/about">Services</a>
+          </li>
+        </ul>
+      </nav>
+    <main className="h-screen p-8 pb-20 font-[family-name:var(--font-geist-sans)]">
+    {children}
+    </main>
+    
       </body>
     </html>
   );
